@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" width="340" height="240">
+  <defs>
+    <style>
+      .stroke { fill: none; stroke: #F8FAFC; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #F59E0B; }
+    </style>
+  </defs>
+
+  <!-- opening angle bracket "<" -->
+  <g class="stroke" transform="translate(36,0)">
+    <path d="M 36,50 L 0,120 L 36,190" />
+  </g>
+
+  <!-- D -->
+  <path class="stroke" d="M 90,50 L 90,190 L 112,190 Q 152,190 152,120 Q 152,50 112,50 L 90,50 Z" />
+  <!-- ascending bar accent between the two letters, referencing report/data growth -->
+  <rect class="accent" x="158" y="140" width="14" height="26" rx="3" />
+  <rect class="accent" x="176" y="112" width="14" height="54" rx="3" />
+  <!-- F -->
+  <path class="stroke" d="M 198,190 L 198,50 L 240,50 M 198,112 L 232,112" />
+  <!-- data node dot -->
+  <circle class="accent" cx="240" cy="46" r="8" />
+
+  <!-- closing angle bracket ">" -->
+  <g class="stroke" transform="translate(316,0) scale(-1,1)">
+    <path d="M 36,50 L 0,120 L 36,190" />
+  </g>
+</svg>

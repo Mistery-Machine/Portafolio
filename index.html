@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Fonseca — Portafolio</title>
+<meta name="description" content="Portafolio de Daniel Fonseca, desarrollador de software. Sitio en construcción.">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F172A;
+    --navy-2:#1E293B;
+    --blue:#2563EB;
+    --amber:#F59E0B;
+    --bone:#F8FAFC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Open Sans', sans-serif;
+    color:var(--bone);
+    background:
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    line-height:1.5;
+    overflow-x:hidden;
+    position:relative;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(248,250,252,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(248,250,252,0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+    pointer-events:none;
+  }
+  header{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    padding:1.5rem 2rem;
+    position:relative;
+    z-index:1;
+  }
+  header img{ width:36px; height:36px; }
+  header span{
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    font-size:1.1rem;
+    letter-spacing:.02em;
+  }
+  main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:2rem 1.25rem;
+    position:relative;
+    z-index:1;
+  }
+  .logo-big{ width:120px; height:120px; margin-bottom:1.5rem; }
+  h1{
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    font-size:clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom:.75rem;
+  }
+  p.role{
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:.95rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--amber);
+    margin-bottom:.6rem;
+  }
+  p.slogan{
+    font-size:1.2rem;
+    color:var(--bone);
+    opacity:.9;
+    margin-bottom:1.75rem;
+    max-width:38ch;
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    background:rgba(37,99,235,.18);
+    border:1px solid var(--blue);
+    color:var(--bone);
+    padding:.55rem 1.1rem;
+    border-radius:999px;
+    font-size:.95rem;
+    font-weight:600;
+    margin-bottom:2.25rem;
+  }
+  .badge .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 0 4px rgba(245,158,11,.25);
+  }
+  .cta{
+    display:inline-block;
+    background:var(--amber);
+    color:var(--navy);
+    font-weight:700;
+    padding:.85rem 1.75rem;
+    border-radius:.6rem;
+    text-decoration:none;
+    font-size:1rem;
+    box-shadow: 0 6px 18px rgba(245,158,11,.35);
+    transition:transform .15s ease;
+  }
+  .cta:hover{ transform:translateY(-2px); }
+  footer{
+    position:relative;
+    z-index:1;
+    display:flex;
+    justify-content:center;
+    gap:1.5rem;
+    padding:1.5rem;
+    font-size:.9rem;
+  }
+  footer a{
+    color:var(--bone);
+    opacity:.85;
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  footer a:hover{ border-color:var(--amber); opacity:1; }
+</style>
+</head>
+<body>
+  <header>
+    <img src="assets/favicon-32.png" alt="Logo JD">
+    <span>Daniel Fonseca</span>
+  </header>
+
+  <main>
+    <img class="logo-big" src="assets/logo-light.svg" alt="Logo <DF> — monograma de Daniel Fonseca">
+    <h1>Portafolio en construcción</h1>
+    <p class="role">Junior Developer &amp; Data Analyst</p>
+    <p class="slogan">Convierto datos en soluciones claras.</p>
+    <div class="badge"><span class="dot"></span> Muy pronto en línea</div>
+    <a class="cta" href="mailto:josedaniel010146@gmail.com">Escríbeme</a>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/daniel-fonseca-salas0102" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Mistery-Machine" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:josedaniel010146@gmail.com">Correo</a>
+  </footer>
+</body>
+</html>
